@@ -51,7 +51,7 @@ public class PlayerH2Service implements PlayerRepository{
 
     @Override
     public void deletePlayer(int playerId){
-        db.update("delete TEAM where playerId=?",playerId);
+        db.update("delete from TEAM where playerId=?",playerId);
     }
 
 }
